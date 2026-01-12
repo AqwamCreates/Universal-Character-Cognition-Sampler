@@ -84,7 +84,8 @@ All are Instruct models.
 |--------------------------------------------|----------------------|--------------|-------------------------------------------------------------|
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q5_K_L       | Best All Rounder                                            |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ3_XXS      | Formatting Issues Only                                      |
-| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | Q5_K_L Quality But With Higher Inference Speed              |
+| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ4_XS       | Q5_K_L Quality But With Higher Inference Speed              |
+| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | IQ4_XS Quality But With Lower Formatting Issues             |
 | Silver-Sun (LLama-2 Special Merge)         | 11B                  | IQ4_XS       | Strong Upgrade From DarkIdol But With Lower Inference Speed |
 
 ## Quantization Recommendations:
