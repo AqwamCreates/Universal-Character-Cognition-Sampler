@@ -61,7 +61,7 @@ top_p: 0.9
 typical_p: 0.9
 min_p: 0.1
 repetition_penalty: 1.1
-repetition_penalty_range: 1024
+repetition_penalty_range: 1024 (Tested The Most) / 4096
 ```
 
 ## Model-Sampler Compatibility Report:
