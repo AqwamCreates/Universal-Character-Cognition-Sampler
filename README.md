@@ -34,16 +34,6 @@ These samplers are stacked in order as shown below.
 
 ```
 
-The reason it works is because:
-
-1. The LLM first listen to input which generates associated words and ideas relating to the input. (top_n_sigma + temperature + top_p + top_k)
-
-2. The LLM then applies the personality aspect of the character and makes sure it is consistent with the character's identity. (typical_p + min_p)
-
-3. It then fixes English mistakes and do a bit of polishing (repetition_penalty).
-
-4. The output becomes character dialogues that feels "snappy" and responsive to users' reactions.
-
 ### **2. Add the "Cognitive Pipeline" Explanation:**
 What you described is brilliant - add it explicitly:
 
