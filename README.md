@@ -23,12 +23,12 @@ Discovered through systematic testing across 8+ models.
 These samplers are stacked in order as shown below. 
 
 ```
-2. temperature
-3. top_k
-4. top_p
-5. typical_p
-6. min_p
-7. repetition_penalty
+2. temperature           # Creativity
+3. top_k                 # Good Option Variety
+4. top_p                 # Expressive Range
+5. typical_p             # Personality Preservation (IMPORTANT)
+6. min_p                 # Nonsense Filter
+7. repetition_penalty    # Natural Flow Maintenance
 ```
 
 ## The Cognitive Pipeline Theory:
@@ -36,23 +36,26 @@ These samplers are stacked in order as shown below.
 This sampler configuration creates a three-stage cognitive pipeline:
 
 1. **Creative Opening** (temperature → top_k → top_p)
-   - Allows wide creative consideration of responses
-   - Similar to human brainstorming phase
+
+   * Allows wide creative consideration of responses
+   * Similar to human brainstorming phase
 
 2. **Personality Filtering** (typical_p → min_p)
-   - Filters creative options through character personality
-   - Ensures consistency with character identity
+
+   * Filters creative options through character personality
+   * Ensures consistency with character identity
 
 3. **Polish & Cleanup** (repetition_penalty)
-   - Removes artifacts, ensures natural flow
-   - Prevents repetition without killing character tics
+
+   * Removes artifacts, ensures natural flow
+   * Prevents repetition without killing character tics
 
 ## Sample Parameters:
 
 ### General Configuration
 
 ```
-temperature: 0.6
+temperature: 0.6 
 top_k: 40
 top_p: 0.9
 typical_p: 0.9
