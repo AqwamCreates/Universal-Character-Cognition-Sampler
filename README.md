@@ -22,6 +22,8 @@ Discovered through systematic testing across 8+ models.
 
 These samplers are stacked in order as shown below. 
 
+```
+
 1. top_n_sigma
 2. temperature
 3. top_k
@@ -29,6 +31,8 @@ These samplers are stacked in order as shown below.
 5. typical_p
 6. min_p
 7. repetition_penalty
+
+```
 
 The reason it works is because:
 
@@ -42,21 +46,16 @@ The reason it works is because:
 
 ## Sample Parameters:
 
+```
 top_n_sigma: 0
-
 temperature: 0.6
-
 top_k: 40
-
 top_p: 0.9
-
 typical_p: 0.9
-
 min_p: 0.1
-
 repetition_penalty: 1.1
-
 repetition_penalty_range: 1024
+```
 
 ## Model-Sampler Compatibility Report:
 
@@ -67,4 +66,4 @@ All are Instruct models.
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q5_K_L       | Best All Rounder                                            |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ3_XXS      | Formatting Issues Only                                      |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | Q5_K_L Quality But With Higher Inference Speed              |
-| Silver-Sun (LLama-2 Special Merge)         | 11B                  | IQ4_XS       | Direct Upgrade From DarkIdol But With Lower Inference Speed |
+| Silver-Sun (LLama-2 Special Merge)         | 11B                  | IQ4_XS       | Strong Upgrade From DarkIdol But With Lower Inference Speed |
