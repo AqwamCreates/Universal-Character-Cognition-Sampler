@@ -121,7 +121,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ```
 temperature: 0.6
 top_k: 50
-top_p: 0.9
+top_p: 0.86
 typical_p: 0.9 (Character Voice Consistency, Recommended) - 0.84 (Instruction Following)
 min_p: 0.25
 repetition_penalty: 1.11
