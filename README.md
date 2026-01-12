@@ -88,7 +88,19 @@ repetition_penalty: 1.1
 repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ```
 
-### Micro Configuration For 8B Models With IQ1XXS-IQ1 Quantizations
+### Nano Configuration For 8B Models With IQ1_M Quantizations
+
+```
+temperature: 0.6
+top_k: 50
+top_p: 0.92
+typical_p: 0.9 (Character Voice Consistency, Recommended) - 0.84 (Instruction Following)
+min_p: 0.1
+repetition_penalty: 1.1
+repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
+```
+
+### Nano Configuration For 8B Models With IQ1_S Quantizations (Don't Bother)
 
 * Still researching on this.
 
@@ -120,7 +132,8 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 |--------------------------------------------|----------------------|--------------|--------------------------------------------------------|
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ2XXS       | Basic Depth                                            |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ2_M        | Rivals With Q3_K_L With High Speed                     |
-| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ1          | "Text Generator"                                       |
+| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ1_M        | "Text Messenger"                                       |
+| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ1_S        | "Text Generator"                                       |
 
 ## Quantization Recommendations:
 
