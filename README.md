@@ -126,7 +126,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | IQ4_XS Quality But With Lower Formatting Issues             |
 | Silver-Sun (LLama-2 Special Merge)         | 11B                  | IQ4_XS       | Strong Upgrade From DarkIdol But With Lower Inference Speed |
 
-#### Fast Inference (Must Use Tight Configurations)
+### Fast Inference (Must Use Tight Configurations)
 
 | Model Name                                 | Model Parameter Size | Quantization | Description                                            |
 |--------------------------------------------|----------------------|--------------|--------------------------------------------------------|
@@ -134,6 +134,13 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ2_M        | Rivals With Q3_K_L With High Speed                     |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ1_M        | "Text Messenger"                                       |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ1_S        | "Text Generator"                                       |
+
+### The Big Boys
+
+| Model Name                                 | Model Parameter Size | Quantization | Description                                            |
+|--------------------------------------------|----------------------|--------------|--------------------------------------------------------|
+| Silver-Sun (LLama-2 Special Merge)         | 11B                  | Q2_K         | DarkIdol Q5_K_L Killer                                 |
+| Tiefighter (LLama-2 Special Merge)         | 13B                  | Q2_K         | Fatter Version Of Silver-Sun Q2_K                      |
 
 ## Quantization Recommendations:
 
