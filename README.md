@@ -91,7 +91,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ### Nano Configuration For 8B Models With IQ1_M Quantizations
 
 ```
-temperature: 0.6
+temperature: 0.05
 top_k: 40
 top_p: 0.92
 typical_p: 0.95 (Character Voice Consistency, Recommended) - 0.84 (Instruction Following)
