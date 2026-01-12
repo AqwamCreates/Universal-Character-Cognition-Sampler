@@ -32,9 +32,6 @@ These samplers are stacked in order as shown below.
 7. repetition_penalty
 ```
 
-### **2. Add the "Cognitive Pipeline" Explanation:**
-What you described is brilliant - add it explicitly:
-
 ## The Cognitive Pipeline Theory:
 
 This sampler configuration creates a three-stage cognitive pipeline:
