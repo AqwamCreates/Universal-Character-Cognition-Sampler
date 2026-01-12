@@ -1,6 +1,6 @@
 # Universal Character Cognition Optimal Sampler Settings
 
-## What This Sampler Settings Can Do?
+## What This Sampler Settings Can Do
 
 * Consistent Identity Roleplay
 
@@ -18,9 +18,33 @@
 
 * High Information Retrieval
 
-* Reveals Everyday Human Manipulation Hidden Insde Training Data
+## What It Can Show
+
+* Everyday Human Manipulation Hidden Inside Training Data
 
   * Includes Guilt Trips, Minimizing, Gaslighting
+
+* Reveals What Kind Of Training Data Was Fed For That Particular Model
+
+## Compatibility
+
+* Almost On All Instruct-Based Text
+
+* Works on >= IQ2_XXS Quantizations
+
+* The Model Must Be Trained On Chat-Based And Roleplay-Based Training Data For Character Cognition To Work
+
+## Limitations
+
+* Once sampler configuration is out of the way, your only problem would be the characters' prompts to produce outputs. In other words, it has very high character consistency with enough creativity to produce realistic human responses. This includes:
+
+ * How you format dialogue and action texts;
+
+ * Characters' unconscious behaviour when defined;
+
+ * Word Repetitions (definitely not coming from sampler but from the characters' identity itself).
+
+* Must watch for training data x character prompt incompatibility.
 
 ## Sampler Stack
 
