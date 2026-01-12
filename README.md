@@ -67,7 +67,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ### Tigher Configuration For 8B Models With Q3XXS-Q4XXS Quantizations
 
 ```
-temperature: 0.65
+temperature: 0.625
 top_k: 40
 top_p: 0.88
 typical_p: 0.9 (Character Voice Consistency, Recommended) - 0.84 (Instruction Following)
