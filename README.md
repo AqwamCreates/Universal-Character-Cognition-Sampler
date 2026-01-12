@@ -82,7 +82,7 @@ With this sampler configuration, it also does this as you talk:
 
 1. typical_p looks at the existing details and examples on how a character would respond to a generic user. This is known as "prior bias".
 
-2. temperature allows it to mutate controllably as the LLM respond as that particular character.
+2. temperature and min_p allows it to mutate controllably as the LLM respond as that particular character.
 
 3. With even more data from you and the LLM's conversation, typical_p uses this to further create a sense of conversational progress.
 
