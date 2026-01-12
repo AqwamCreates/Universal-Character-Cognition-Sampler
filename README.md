@@ -76,7 +76,7 @@ repetition_penalty: 1.1
 repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ```
 
-### Miro Configuration For 8B Models With IQ2XXS-IQ2_M Quantizations
+### Micro Configuration For 8B Models With IQ2XXS-IQ2_M Quantizations
 
 ```
 temperature: 0.6
