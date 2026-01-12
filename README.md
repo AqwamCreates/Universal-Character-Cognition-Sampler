@@ -58,7 +58,7 @@ This sampler configuration creates a three-stage cognitive pipeline:
 temperature: 0.6 
 top_k: 40
 top_p: 0.9
-typical_p: 0.9
+typical_p: 0.91
 min_p: 0.1
 repetition_penalty: 1.1
 repetition_penalty_range: 1024 (Tested The Most) / 4096 (No Negative Impact)
@@ -67,11 +67,11 @@ repetition_penalty_range: 1024 (Tested The Most) / 4096 (No Negative Impact)
 ### Tigher Configuration For 8B Models With Q3XXS-Q4XXS Quantizations
 
 ```
-temperature: 0.6
+temperature: 0.12
 top_k: 40
-top_p: 0.9
+top_p: 0.88
 typical_p: 0.9
-min_p: 0.1
+min_p: 0.12
 repetition_penalty: 1.1
 repetition_penalty_range: 1024 (Tested The Most) / 4096 (No Negative Impact)
 ```
