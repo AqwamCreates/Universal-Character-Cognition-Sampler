@@ -84,7 +84,7 @@ With this sampler configuration, it also does this as you talk:
 
 2. temperature allows it to mutate controllably as the LLM respond as that particular character.
 
-3. With even more data from you and the LLM's character, typical_p uses this to further create a sense of conversational progress.
+3. With even more data from you and the LLM's conversation, typical_p uses this to further create a sense of conversational progress.
 
 4. This results in the LLM remembering past conversation without introducing much hallucinations or losing consistency.
 
