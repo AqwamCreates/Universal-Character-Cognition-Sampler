@@ -104,7 +104,7 @@ repetition_penalty: 1.1
 repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ```
 
-### Tigher Configuration For 8B Models With Q3XXS-Q4XXS Quantizations
+### Extreme Configuration For 8B Models With Q3XXS-Q4XXS Quantizations
 
 ```
 temperature: 0.62
