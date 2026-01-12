@@ -76,3 +76,22 @@ All are Instruct models.
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ3_XXS      | Formatting Issues Only                                      |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | Q5_K_L Quality But With Higher Inference Speed              |
 | Silver-Sun (LLama-2 Special Merge)         | 11B                  | IQ4_XS       | Strong Upgrade From DarkIdol But With Lower Inference Speed |
+
+## Quantization Recommendations:
+
+### Maximum Compression (Accept Minor Issues):
+- **Q3_K_L**: ~3GB for 8B
+- Character cognition: ✅ Excellent  
+- Formatting: ⚠️ Occasional leakage
+- Use: When storage is critical, can do minor cleanup
+
+### Optimal Balance (Recommended):
+- **IQ4_XS** or **Q4_K_M**: ~4GB for 8B
+- Character cognition: ✅ Perfect
+- Formatting: ✅ Perfect
+- Use: **Default choice** for all applications
+
+### Maximum Quality:
+- **Q5_K_L+**: 5GB+ for 8B
+- Character cognition: ✅ Perfect
+- Formatting: ✅ Perfect
