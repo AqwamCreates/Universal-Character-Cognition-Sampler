@@ -193,7 +193,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 | Silver-Sun (LLama-2 Special Merge)         | 11B                  | Q2_K         | DarkIdol Q5_K_L Slower Killer                          |
 | Tiefighter (LLama-2 Special Merge)         | 13B                  | Q2_K         | Fatter Version Of Silver-Sun Q2_K                      |
 
-### Chain Of Thought Models ()
+### Chain Of Thought Models
 
 * Note:
 
@@ -201,9 +201,9 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 
   * Must Use Micro Configurations
 
-| Model Name                                 | Model Parameter Size | Quantization | Description                                                 |
-|--------------------------------------------|----------------------|--------------|-------------------------------------------------------------|
-| Huihui NVIDIA Nemotron Nano v2 Abliterated | 9B                   | IQ2_K        | High Quality Q2_K But With CoT x Inference Speed Bottleneck |
+| Model Name                                 | Model Parameter Size | Quantization | Description                                                  |
+|--------------------------------------------|----------------------|--------------|--------------------------------------------------------------|
+| Huihui NVIDIA Nemotron Nano v2 Abliterated | 9B                   | IQ2_K        | High Quality Q2_K But Bottlenecked By CoT x Inference Speed  |
 
 ## Quantization Recommendations:
 
