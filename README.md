@@ -172,7 +172,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 
 ### Poor Man's GPU
 
-* Q2_K Quant Models
+* IQ2_K / Q2_K Quant Models
 * Micro Sampler Configuration (Works Consistently Across 2B-13B)
 * Chain-Of-Thought Drastically Increase Quality Output When Compared To Non-CoT Versions (Especially at ~4B).
 
