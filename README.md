@@ -175,14 +175,14 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 * IQ2_K / Q2_K Quant Models
 * Micro Sampler Configuration (Works Consistently Across 2B-13B)
 * Chain-Of-Thought (CoT) Drastically Increase Quality Output When Compared To Non-CoT Versions (Especially at ~4B).
-* Feels Like You Upgraded The Model For 2-3B Parameters For Q2 Inference Speed.
+* Feels Like You Incrased The Model's Quant By 2-3 Levels For Q2 Inference Speed.
 
 ### Free Model Upgrades
 
 * IQ5_K_L / Q5_K_L Quant Models
 * General Sampler Configuration (Works Consistently Across 2B-13B)
 * Chain-Of-Thought (CoT) Drastically Increase Quality Output When Compared To Non-CoT Versions (Especially at ~4B).
-* Feels Like You Upgraded The Model For 5-10B Parameters For Q5 Inference Speed.
+* Feels Like You Upgraded The Model For 2-3B Parameters For Q5 Inference Speed.
 
 ## Model-Sampler Compatibility Report:
 
