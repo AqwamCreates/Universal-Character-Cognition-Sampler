@@ -149,12 +149,12 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 
 ### Common Settings
 
-| Setting                  | Value                                                                         |
-|--------------------------|-------------------------------------------------------------------------------|
-| Top K                    | 40 (More Repetitive, Recommended) - 70 (More Exploration)                     |
-| Typical P                | 0.9 (Character Voice Consistency, Recommended) - 0.85 (Instruction Following) |
-| Repetition Penalty       | 1.1                                                                           |
-| Repetition Penalty Range | 4096                                                                          |
+| Setting                  | Recommended Value | Lower Bound Value            | Upper Bound                       |
+|--------------------------|-------------------|------------------------------|-----------------------------------|
+| Top K                    | 60                | 40 (More Character Rigidity) | 60 (More Exploration)             |  
+| Typical P                | 0.9               | 0.85 (Instruction Following) | 0.9 (Character Voice Consistency) |
+| Repetition Penalty       | 1.1               | N/A                          | N/A                               |
+| Repetition Penalty Range | 4096              | N/A                          | N/A                               |
 
 ### Quantization-Specific Settings
 
