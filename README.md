@@ -94,7 +94,15 @@ This sampler configuration creates a three-stage cognitive pipeline:
 
 With this sampler configuration, it also does this as you talk:
 
-1. typical_p looks at the existing details and examples on how a character would respond to a generic user. This is known as "prior bias".
+1. typical_p looks at the existing details and examples on how a character would respond to a generic user. This is known as "prior bias". There are three types of priors here:
+
+  1. Training data prior: The general knowledge that is encoded inside the model.
+
+  2. Character prompt prior: The prior encoded within the words of the character's prompt.
+
+  3. Example prior: The prior on how the action and narration text should be generated.
+
+  4. Instruction prior: The prior that "activate" conversation mode to avoid generating the character description instead.
 
 2. temperature and min_p allows it to mutate controllably as the LLM respond as that particular character.
 
