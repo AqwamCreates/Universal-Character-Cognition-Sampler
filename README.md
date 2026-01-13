@@ -16,6 +16,8 @@
 
 * Capable Of Emotional Validation
 
+* Handle All Character Types: Simple → Complex → Philosophical → Traumatized
+
 * High Information Retrieval
 
 ## What It Can Show
@@ -32,9 +34,15 @@
 
 ## Compatibility
 
-* Almost On All Instruct-Based Text
+* Best On All Instruct-Based Text
 
-* Works on >= IQ2_XXS Quantizations
+* Model Sizes: 2B → 8B → 11B (8B appears optimal)
+
+* Works On >= IQ2_XXS Quantizations
+
+* Architectures: Llama, Gemma, Nemotron, Qwen, MoE (Mixture of Experts)
+
+* Works With All Training Types: Chat, Instruct, Merges, VLMs
 
 * The Model Must Be Trained On Chat-Based And Roleplay-Based Training Data For Character Cognition To Work
 
@@ -247,11 +255,3 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 
 * Light touch - prevents loops without killing character tics
 * Most people over-penalize (1.3+ = stilted dialogue)
-
-## Proven Universal Across:
-
-* Architectures: Llama, Qwen, MoE (Mixture of Experts)
-* Quantizations: Q8 → Q5 → IQ4_XS → Q3_K_L → IQ3_XXS
-* Model Sizes: 3B → 8B → 11B (8B appears optimal)
-* Training Types: Chat, Instruct, Merges, VLMs
-* Character Types: Simple → Complex → Philosophical → Traumatized
