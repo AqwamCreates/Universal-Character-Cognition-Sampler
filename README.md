@@ -213,28 +213,13 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 |--------------------------------------------|----------------------|--------------|--------------------------------------------------------------|
 | Huihui NVIDIA Nemotron Nano v2 Abliterated | 9B                   | IQ2_K        | High Quality Q2_K But Bottlenecked By CoT x Inference Speed  |
 
-## Quantization Recommendations:
+## Configuration Recommendations:
 
-### Maximum Compression (Accept Minor Issues):
+### Poor Man's GPU
 
-* **Q3_K_L**: ~3GB for 8B
-* Character cognition: ✅ Excellent  
-* Formatting: ⚠️ Occasional leakage
-* Use: When storage is critical, can do minor cleanup
-
-### Optimal Balance (Recommended):
-
-* **IQ4_XS** or **Q4_K_M**: ~4GB for 8B
-* Character cognition: ✅ Perfect
-* Formatting: ✅ Perfect
-* Use: **Default choice** for all applications
-
-### Maximum Quality:
-
-* **Q5_K_L+**: 5GB+ for 8B
-* Character cognition: ✅ Perfect
-* Formatting: ✅ Perfect
-* Use: When storage isn't a concern and you want extra character depth.
+* Q2_K Quant Models
+* Micro Sampler Configuration (Works Consistently Across 2B-13B)
+* Chain-Of-Thought Drastically Increase Quality Output When Compared To Non-CoT Versions (Especially at ~4B).
 
 ## Why These Specific Values Work:
 
