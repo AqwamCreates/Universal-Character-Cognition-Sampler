@@ -154,6 +154,8 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 |--------------------------|-------|
 | Repetition Penalty Range | 4096  |
 
+### Quantization-Specific Settings
+
 | UCC Sampler           | Quantization Range | Temperature | Top K | Top P | Typical P                                                                      | Min P | Repetition Penalty |
 |-----------------------|--------------------|-------------|-------|-------|--------------------------------------------------------------------------------|-------|--------------------|
 | General               | ≥ Q5XS             | 0.6         | 40    | 0.9   | 0.91 (Character Voice Consistency, Recommended) - 0.85 (Instruction Following) | 0.1   | 1.1                |
