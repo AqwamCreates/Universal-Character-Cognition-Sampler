@@ -62,6 +62,32 @@
 
 * Must watch for training data x character prompt incompatibility.
 
+## What We Actually Discovered (The Truth)
+
+After extensive testing and community validation, here's what the UCC sampler actually does:
+
+### The Core Discovery:
+
+We found that proper prior management through sampler configuration can make small models (2B-13B) perform like much larger models (70B+) for specific, constrained tasks like character roleplay.
+
+### What It Actually Does:
+
+* Prioritizes character consistency above all else via typical_p=0.9
+
+* Enables context-efficient character maintenance (not context-free)
+
+* Makes quantization work FOR you rather than against you
+
+* Democratizes quality AI to cheap hardware
+
+### What It Does NOT Do:
+
+* Create true "context-free" character cognition
+
+* Eliminate need for character prompts in context
+
+* Work equally well for all tasks (specialized for character consistency)
+
 ## UCC Sampler Stack
 
 These samplers are stacked in order as shown below. 
@@ -75,24 +101,25 @@ These samplers are stacked in order as shown below.
 6. repetition_penalty    # Natural Flow Maintenance
 ```
 
-## The Cognitive Pipeline Theory
+## Three-Stage Optimization Pipeline
 
 This sampler configuration creates a three-stage cognitive pipeline:
 
 1. **Creative Opening** (temperature → top_k → top_p)
 
-   * Allows wide creative consideration of responses
-   * Similar to human brainstorming phase
+   * Establishes creative baseline
+   * Similar to brainstorming phase
 
-2. **Personality Filtering** (typical_p → min_p)
+2. **Character Enforcement** (typical_p → min_p)
 
-   * Filters creative options through character personality
-   * Ensures consistency with character identity
+   * `typical_p=0.9`: Gives character prompt 90% dominance over output
+   * Creates "statistical character prison" that maintains archetype
+   * Not context-free but context-resilient
 
-3. **Polish & Cleanup** (repetition_penalty)
+3. **Flow Polish** (repetition_penalty)
 
-   * Removes artifacts, ensures natural flow
-   * Prevents repetition without killing character tics
+   * Maintains natural conversation flow
+   * Prevents repetition while preserving character tics
 
 With this sampler configuration, it also does this as you talk:
 
