@@ -194,7 +194,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 | Model Name                                 | Model Parameter Size | Quantization | Sampler | Description                                                   |
 |--------------------------------------------|----------------------|--------------|---------|---------------------------------------------------------------|
 | Gemma The Writer HERETIC                   | 9B                   | Q2_K         | Micro   | Best Quality All Around (No Repetitions Or Roleplay Leakage)  |
-| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | Micro   | Better Format Compliance And Character Handling               |
+| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | Extreme | Better Format Compliance And Character Handling               |
 | DeepSeek R1 Distill Qwen Uncensored        | 7B                   | IQ2_K        | Micro   | Higher Depth For Lower Speed (From Thinking Chain-Of-Thought) |
 
 ## Model-Sampler Compatibility Report
