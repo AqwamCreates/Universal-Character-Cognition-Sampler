@@ -284,7 +284,7 @@ repetition_penalty_range: 4096
 * Light touch - prevents loops without killing character tics
 * Most people over-penalize (1.3+ = stilted dialogue)
 
-### Final Formulation
+### Conceptual Formula
 
 ```
 
