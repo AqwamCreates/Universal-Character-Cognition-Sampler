@@ -62,25 +62,17 @@
 
 * Must watch for training data x character prompt incompatibility.
 
-## What We Actually Discovered (The Truth)
-
-After extensive testing and community validation, here's what the UCC sampler actually does:
-
-### The Core Discovery:
+## What We Actually Discovered
 
 We found that proper prior management through sampler configuration can make small models (2B-13B) perform like much larger models (70B+) for specific, constrained tasks like character roleplay.
 
-### What It Actually Does:
+### What It Actually Does
 
 * Prioritizes character consistency above all else via typical_p=0.9
 
 * Enables context-efficient character maintenance (not context-free)
 
-* Makes quantization work FOR you rather than against you
-
-* Democratizes quality AI to cheap hardware
-
-### What It Does NOT Do:
+### What It Does NOT Do
 
 * Create true "context-free" character cognition
 
