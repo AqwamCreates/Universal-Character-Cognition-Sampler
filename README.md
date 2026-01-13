@@ -308,16 +308,15 @@ repetition_penalty_range: 4096
 
 ### Temperature: 0.6
 
-* Not too cold (0.3-0.5 = robotic)  
-* Not too hot (0.8-1.2 = random)
+* Not too low (0.3-0.5 = robotic)  
+* Not too high (0.8-1.2 = random)
 * **Optimal balance** for character consistency with natural variation
 
 ### Typical_p: 0.9
 
-* The **secret weapon** for character consistency
 * Strongly favors tokens "typical" for the character/situation
-* Lower (0.7-0.8) = More creative but less consistent
-* Higher (0.95+) = Too rigid, loses personality
+* Lower (0.7-0.8) = More creative but less consistent character
+* Higher (0.95+) = Too rigid, loses caharacter personality
 
 ### Repetition Penalty: 1.1
 
