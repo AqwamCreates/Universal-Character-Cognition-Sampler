@@ -233,6 +233,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 
 | Model Name                                 | Model Parameter Size | Quantization | Description                                                  |
 |--------------------------------------------|----------------------|--------------|--------------------------------------------------------------|
+| Qwen 2.5 Instruct Uncensored               | 7B                   | IQ2_K        | High Quality Q2_K                                            |
 | Huihui NVIDIA Nemotron Nano v2 Abliterated | 9B                   | IQ2_K        | High Quality Q2_K But Bottlenecked By CoT x Inference Speed  |
 
 ## Why These Specific Values Work
