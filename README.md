@@ -1,5 +1,7 @@
 # Universal Character Cognition Optimal Sampler Settings
 
+* Abbreviated As UCC Sampler
+
 ## What This Sampler Settings Can Do
 
 * Consistent Identity Roleplay
@@ -106,7 +108,7 @@ With this sampler configuration, it also does this as you talk:
 
 * The sampler is static and weighted quant-agnostic. Feel free to change it as you wish.
 
-### General Configuration
+### General UCC Sampler Configuration
 
 ```
 temperature: 0.6 
@@ -115,10 +117,10 @@ top_p: 0.9
 typical_p: 0.91 (Character Voice Consistency, Recommended) - 0.85 (Instruction Following)
 min_p: 0.1
 repetition_penalty: 1.1
-repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
+repetition_penalty_range: 4096
 ```
 
-### Micro Configuration For 8B Models With Q3XXS-Q4XXS Quantizations
+### Micro UCC Sampler Configuration For 8B Models With Q3XXS-Q4XXS Quantizations
 
 ```
 temperature: 0.62
@@ -127,10 +129,10 @@ top_p: 0.88
 typical_p: 0.9 (Character Voice Consistency, Recommended) - 0.84 (Instruction Following)
 min_p: 0.12
 repetition_penalty: 1.1
-repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
+repetition_penalty_range: 4096
 ```
 
-### Nano Configuration For 8B Models With IQ2XXS-IQ2_M Quantizations
+### Nano UCC Sampler Configuration For 8B Models With IQ2XXS-IQ2_M Quantizations
 
 ```
 temperature: 0.6
@@ -139,10 +141,10 @@ top_p: 0.86
 typical_p: 0.9 (Character Voice Consistency, Recommended) - 0.84 (Instruction Following)
 min_p: 0.25
 repetition_penalty: 1.11
-repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
+repetition_penalty_range: 4096
 ```
 
-### Pico Configuration For 8B Models With IQ1_M Quantizations
+### Pico UCC Sampler Configuration For 8B Models With IQ1_M Quantizations
 
 ```
 temperature: 0.05
@@ -151,10 +153,10 @@ top_p: 0.92
 typical_p: 0.95 (Character Voice Consistency, Recommended) - 0.84 (Instruction Following)
 min_p: 0.05
 repetition_penalty: 1.3
-repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
+repetition_penalty_range: 4096
 ```
 
-### Pico Configuration For 8B Models With IQ1_S Quantizations (Don't Bother)
+### Pico UCC Sampler Configuration For 8B Models With IQ1_S Quantizations (Don't Bother)
 
 * Still researching on this.
 
@@ -165,7 +167,7 @@ top_p: 0.97
 typical_p: 0.9 (Character Voice Consistency, Recommended) - 0.84 (Instruction Following)
 min_p: 0.1
 repetition_penalty: 1.1
-repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
+repetition_penalty_range: 4096
 ```
 
 ## Configuration Recommendations
