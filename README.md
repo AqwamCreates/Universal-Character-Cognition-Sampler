@@ -189,7 +189,15 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 * Micro Sampler Configuration (Works Consistently Across 2B-13B).
 * Feels Like You Upgraded The CoT Model For 2-3B Parameters For Q2 / Q3 Inference Speed.
 
-## Model-Sampler Compatibility Report:
+## Top Models
+
+| Model Name                                 | Model Parameter Size | Quantization | Sampler | Description                                                  |
+|--------------------------------------------|----------------------|--------------|---------|--------------------------------------------------------------|
+| Gemma The Writer HERETIC                   | 9B                   | Q2_K         | Micro   | Best Quality All Around (No Repetitions Or Roleplay Leakage) |
+| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q2_K         | Micro   | Better Format Compliance And Character Handling              |
+| DeepSeek R1 Distill Qwen Uncensored        | 7B                   | IQ2_K        | Micro   | Higher Depth For Lower Speed                                 |
+
+## Model-Sampler Compatibility Report
 
 ### Best General Performance
 
@@ -234,7 +242,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 | Model Name                                 | Model Parameter Size | Chain-Of-Thought Type | Quantization | Description                                                                                                      |
 |--------------------------------------------|----------------------|-----------------------|--------------|------------------------------------------------------------------------------------------------------------------|
 | Qwen 3 Thinking Uncensored                 | 4B                   | Long                  | IQ2_K        | High "WTF" DarkIdol Llama-3.1 Instruct 1.2 Uncensored Q2_K (High Quality Texts, But Can Never Extract Dialogues) |
-| DeepSeek R1 Distill Qwen Uncensor   ed     | 7B                   | Thinking              | IQ2_K        | High Quality Q2_K                                                                                                |
+| DeepSeek R1 Distill Qwen Uncensored        | 7B                   | Thinking              | IQ2_K        | High Quality Q2_K                                                                                                |
 | Huihui NVIDIA Nemotron Nano v2 Abliterated | 9B                   | Long                  | IQ2_K        | High Quality Q2_K But Bottlenecked By CoT x Inference Speed (Due To Transparent Text Generation)                 |
 
 ### "Probably Not Worth It" Models
