@@ -185,7 +185,9 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ### "What Do You Mean It Can Think Fast And Smart?!"
 
 * Chain-Of-Thoughts (CoT) Models Only.
-* Mainly 4B (Minimum) / 7B (Recommended) Models With IQ3_K_S / IQ3_K_S Quantization.
+* Mainly 4B (Minimum) / 7B (Recommended) Models.
+* For Pure CoT Models, IQ3_K_S / IQ3_K_S Quantization Is The Minimum.
+* For Thinking CoT Models, IQ2_K / IQ2_K Quantization Is The Minimum.
 * Micro Sampler Configuration (Works Consistently Across 2B-13B).
 * Feels Like You Upgraded The CoT Model For 2-3B Parameters For Q3 Inference Speed.
 
@@ -231,11 +233,12 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 
   * Must Use Micro Configurations
 
-| Model Name                                 | Model Parameter Size | Quantization | Description                                                  |
-|--------------------------------------------|----------------------|--------------|--------------------------------------------------------------|
-| Qwen 2.5 Instruct Uncensored               | 7B                   | IQ3_K_S      | High Quality Q2_K                                            |
-| Qwen 2.5 Instruct Uncensored               | 7B                   | IQ2_K        | Fast High Quality Q2_K But Minor Roleplay Leakage            |
-| Huihui NVIDIA Nemotron Nano v2 Abliterated | 9B                   | IQ2_K        | High Quality Q2_K But Bottlenecked By CoT x Inference Speed  |
+| Model Name                                 | Model Parameter Size | Quantization | Description                                                                             |
+|--------------------------------------------|----------------------|--------------|-----------------------------------------------------------------------------------------|
+| Qwen 3 Thinking Uncensored                 | 4B                   | IQ2_K        | High "WTF" Quality DarkIdol Llama-3.1 Instruct 1.2 Uncensored Q2_K                      |
+| Qwen 2.5 Instruct Uncensored               | 7B                   | IQ3_K_S      | High Quality DarkIdol Llama-3.1 Instruct 1.2 Uncensored Q2_K But Minor Roleplay Leakage |
+| Qwen 2.5 Instruct Uncensored               | 7B                   | IQ2_K        | Same As IQ2_K But Faster And Even More Roleplay Leakage                                 |
+| Huihui NVIDIA Nemotron Nano v2 Abliterated | 9B                   | IQ2_K        | High Quality Q2_K But Bottlenecked By CoT x Inference Speed                             |
 
 ## Why These Specific Values Work
 
