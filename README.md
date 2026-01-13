@@ -182,7 +182,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 * General Sampler Configuration (Works Consistently Across 2B-13B).
 * Feels Like You Upgraded The Model For 2-3B Parameters For Q5 Inference Speed.
 
-### Overthinking Idiot
+### Overthinking Idiots
 
 * Chain-Of-Thoughts (CoT) Models Only.
 * Mainly 4B (Minimum) / 7B (Recommended) Models.
