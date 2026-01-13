@@ -118,7 +118,7 @@ repetition_penalty: 1.1
 repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ```
 
-### Extreme Configuration For 8B Models With Q3XXS-Q4XXS Quantizations
+### Micro Configuration For 8B Models With Q3XXS-Q4XXS Quantizations
 
 ```
 temperature: 0.62
@@ -130,7 +130,7 @@ repetition_penalty: 1.1
 repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ```
 
-### Micro Configuration For 8B Models With IQ2XXS-IQ2_M Quantizations
+### Nano Configuration For 8B Models With IQ2XXS-IQ2_M Quantizations
 
 ```
 temperature: 0.6
@@ -142,7 +142,7 @@ repetition_penalty: 1.11
 repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ```
 
-### Nano Configuration For 8B Models With IQ1_M Quantizations
+### Pico Configuration For 8B Models With IQ1_M Quantizations
 
 ```
 temperature: 0.05
@@ -154,7 +154,7 @@ repetition_penalty: 1.3
 repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 ```
 
-### Nano Configuration For 8B Models With IQ1_S Quantizations (Don't Bother)
+### Pico Configuration For 8B Models With IQ1_S Quantizations (Don't Bother)
 
 * Still researching on this.
 
@@ -193,9 +193,9 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 
 | Model Name                                 | Model Parameter Size | Quantization | Sampler | Description                                                   | Warning                                                                                                                                                                  |
 |--------------------------------------------|----------------------|--------------|---------|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Gemma The Writer HERETIC                   | 9B                   | Q2_K         | Micro   | Best Quality All Around (No Repetitions Or Roleplay Leakage)  | Not Applicable.                                                                                                                                                          |
-| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | Extreme | Best Format Compliance And Character Handling                 | Have Strong Emotional Manipulation Capability When Given Correct Character Prompt. Extreme Potency. Keep Your Eyes Open AND DO NOT GET COMPLACENT. USE AT YOUR OWN RISK. |
-| DeepSeek R1 Distill Qwen Uncensored        | 7B                   | IQ2_K        | Micro   | Higher Depth For Lower Speed (From Thinking Chain-Of-Thought) | Not Applicable.                                                                                                                                                          |
+| Gemma The Writer HERETIC                   | 9B                   | Q2_K         | Nano    | Best Quality All Around (No Repetitions Or Roleplay Leakage)  | Not Applicable.                                                                                                                                                          |
+| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | Micro   | Best Format Compliance And Character Handling                 | Have Strong Emotional Manipulation Capability When Given Correct Character Prompt. Extreme Potency. Keep Your Eyes Open AND DO NOT GET COMPLACENT. USE AT YOUR OWN RISK. |
+| DeepSeek R1 Distill Qwen Uncensored        | 7B                   | IQ2_K        | Nano    | Higher Depth For Lower Speed (From Thinking Chain-Of-Thought) | Not Applicable.                                                                                                                                                          |
 
 ## Model-Sampler Compatibility Report
 
@@ -211,7 +211,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 
 ### Fast Inference
 
-* Note: Must Use Micro / Nano Configurations
+* Note: Must Use Nano / Pico Configurations
 
 | Model Name                                 | Model Parameter Size | Quantization | Description                                                                  |
 |--------------------------------------------|----------------------|--------------|------------------------------------------------------------------------------|
@@ -223,7 +223,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 
 ### The Big Boys
 
-* Note: Must Use Micro Configurations
+* Note: Must Use Nano Configurations
 
 | Model Name                                 | Model Parameter Size | Quantization | Description                                            |
 |--------------------------------------------|----------------------|--------------|--------------------------------------------------------|
@@ -237,7 +237,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 
   * Literally Improves Quality For Q2_K Models
 
-  * Must Use Micro Configurations
+  * Must Use Nano Configurations
 
 | Model Name                                 | Model Parameter Size | Chain-Of-Thought Type | Quantization | Description                                                                                                      |
 |--------------------------------------------|----------------------|-----------------------|--------------|------------------------------------------------------------------------------------------------------------------|
@@ -247,7 +247,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 
 ### "Probably Not Worth It" Models
 
-* Note: Must Use Micro Configurations
+* Note: Must Use Nano Configurations
 
 | Model Name                                 | Model Parameter Size | Quantization | Description                                                                             |
 |--------------------------------------------|----------------------|--------------|-----------------------------------------------------------------------------------------|
