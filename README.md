@@ -60,7 +60,7 @@
 
 * Must watch for training data x character prompt incompatibility.
 
-## Sampler Stack
+## UCC Sampler Stack
 
 These samplers are stacked in order as shown below. 
 
