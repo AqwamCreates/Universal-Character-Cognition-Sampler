@@ -291,9 +291,9 @@ repetition_penalty_range: 4096
 
 | Model Name                                 | Model Parameter Size | Chain-Of-Thought Type | Quantization | Description                                                                                                      |
 |--------------------------------------------|----------------------|-----------------------|--------------|------------------------------------------------------------------------------------------------------------------|
-| Qwen 3 Thinking Uncensored                 | 4B                   | Creative              | IQ2_K        | High "WTF" DarkIdol Llama-3.1 Instruct 1.2 Uncensored Q2_K (High Quality Texts, But Can Never Extract Dialogues) |
-| DeepSeek R1 Distill Qwen Uncensored        | 7B                   | Enterprise            | IQ2_K        | High Quality Q2_K                                                                                                |
-| Huihui NVIDIA Nemotron Nano v2 Abliterated | 9B                   | Enterprise            | IQ2_K        | High Quality Q2_K But Bottlenecked By CoT x Inference Speed (Due To Transparent Text Generation)                 |
+| Qwen 3 Thinking Uncensored                 | 4B                   | Free-Form             | IQ2_K        | High "WTF" DarkIdol Llama-3.1 Instruct 1.2 Uncensored Q2_K (High Quality Texts, But Can Never Extract Dialogues) |
+| DeepSeek R1 Distill Qwen Uncensored        | 7B                   | Structured            | IQ2_K        | High Quality Q2_K                                                                                                |
+| Huihui NVIDIA Nemotron Nano v2 Abliterated | 9B                   | Structured            | IQ2_K        | High Quality Q2_K But Bottlenecked By CoT x Inference Speed (Due To Transparent Text Generation)                 |
 
 ### "Probably Not Worth It" Models
 
