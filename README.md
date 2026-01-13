@@ -96,6 +96,8 @@ With this sampler configuration, it also does this as you talk:
 
 ## Sample Parameters:
 
+* The sampler is static and weighted quant-agnostic. Feel free to change it as you wish.
+
 ### General Configuration
 
 ```
@@ -170,7 +172,9 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | IQ4_XS Quality But With Lower Formatting Issues             |
 | Silver-Sun (LLama-2 Special Merge)         | 11B                  | IQ4_XS       | Strong Upgrade From DarkIdol But With Lower Inference Speed |
 
-### Fast Inference (Must Use Micro / Nano Configurations)
+### Fast Inference
+
+* Note: Must Use Micro / Nano Configurations
 
 | Model Name                                 | Model Parameter Size | Quantization | Description                                                                                         |
 |--------------------------------------------|----------------------|--------------|-----------------------------------------------------------------------------------------------------|
@@ -179,13 +183,27 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ1_M        | "Text Messenger"                                                                                    |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ1_S        | "Text Generator"                                                                                    |
 
-### The Big Boys (Must Use Micro Configurations)
+### The Big Boys
+
+* Note: Must Use Micro Configurations
 
 | Model Name                                 | Model Parameter Size | Quantization | Description                                            |
 |--------------------------------------------|----------------------|--------------|--------------------------------------------------------|
-| Gemma The Writer HERETIC                   | 9B                   | IQ2_M        | DarkIdol Q5_K_L Killer                                 |
+| Gemma The Writer HERETIC                   | 9B                   | Q2_K         | DarkIdol Q5_K_L Killer                                 |
 | Silver-Sun (LLama-2 Special Merge)         | 11B                  | Q2_K         | DarkIdol Q5_K_L Slower Killer                          |
 | Tiefighter (LLama-2 Special Merge)         | 13B                  | Q2_K         | Fatter Version Of Silver-Sun Q2_K                      |
+
+### Chain Of Thought Models ()
+
+* Note:
+
+  * Literally Improves Quality For Q2_K Models
+
+  * Must Use Micro Configurations
+
+| Model Name                                 | Model Parameter Size | Quantization | Description                                                 |
+|--------------------------------------------|----------------------|--------------|-------------------------------------------------------------|
+| Huihui NVIDIA Nemotron Nano v2 Abliterated | 9B                   | IQ2_K        | High Quality Q2_K But With CoT x Inference Speed Bottleneck |
 
 ## Quantization Recommendations:
 
