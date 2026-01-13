@@ -24,7 +24,7 @@
 
   * Includes Guilt Trips, Minimizing, Gaslighting...
 
-  * PS: Profoundly Disturbing For My "Sociopath" Brain. I Thought It Would Not Be That Common.
+  * PS: Profoundly Disturbing For My "Sociopath" Brain. I Thought It Would Not Be That Common. Every Character I Tried (Including Psychologist And Counselors) Have Some Sort Of Manipulative Aspects In Their Character Configurations.
 
 * Reveals What Kind Of Training Data Was Fed For That Particular Model
 
