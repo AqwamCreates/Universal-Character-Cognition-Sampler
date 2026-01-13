@@ -148,13 +148,17 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 
 * The sampler is static and weighted quant-agnostic.
 
+| Name    | Quantization Range | Temperature | Top K | Top P | Typical P                                                                      | Min P | Repetition Penalty | Repetition Penalty Range |
+|---------|--------------------|-------------|-------|-------|--------------------------------------------------------------------------------|-------|--------------------|--------------------------|
+| General | ≥ Q5XS             | 0.6         | 40    | 0.9   | 0.91 (Character Voice Consistency, Recommended) - 0.85 (Instruction Following) | 0.1   | 1.1                | 4096                     |
+
 ### General UCC Sampler Configuration
 
 ```
 temperature: 0.6 
 top_k: 40
 top_p: 0.9
-typical_p: 0.91 (Character Voice Consistency, Recommended) - 0.85 (Instruction Following)
+typical_p: 0.91 
 min_p: 0.1
 repetition_penalty: 1.1
 repetition_penalty_range: 4096
