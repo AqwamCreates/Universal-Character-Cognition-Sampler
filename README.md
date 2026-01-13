@@ -189,7 +189,7 @@ repetition_penalty_range: 1024 (Most Tested) / 4096 (No Negative Impact)
 * For Pure CoT Models, IQ3_K_S / IQ3_K_S Quantization Is The Minimum.
 * For Thinking CoT Models, IQ2_K / IQ2_K Quantization Is The Minimum.
 * Micro Sampler Configuration (Works Consistently Across 2B-13B).
-* Feels Like You Upgraded The CoT Model For 2-3B Parameters For Q3 Inference Speed.
+* Feels Like You Upgraded The CoT Model For 2-3B Parameters For Q2 / Q3 Inference Speed.
 
 ## Model-Sampler Compatibility Report:
 
