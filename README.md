@@ -145,10 +145,10 @@ With this sampler configuration, it also does this as you talk:
 
 Character Fidelity Levels:
 
-1. Full prompt in context + UCC: 95% fidelity (Excellent)
-2. Partial prompt + UCC: 80-90% fidelity (Very Good)  
-3. No prompt, only history + UCC: 50-60% fidelity (Functional)
-4. No prompt, no UCC: 10-20% fidelity (Broken)
+* Full prompt in context + UCC: 95% fidelity (Excellent)
+* Partial prompt + UCC: 80-90% fidelity (Very Good)  
+* No prompt, only history + UCC: 50-60% fidelity (Functional)
+* No prompt, no UCC: 10-20% fidelity (Broken)
 
 Conclusion: UCC doesn't eliminate context needs but reduces them dramatically and enables graceful degradation when context is limited.
 
