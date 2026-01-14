@@ -280,3 +280,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 P(token|character) = typical_p × P(token|prompt) + (1 - typical_p) × P(token|training)
 
 ```
+
+## Recommended Character Prompt Design.
+
+* Do not use turn-based dialogue examples unless you really want to severely limit the characters' dialogue flexibility to your response.
