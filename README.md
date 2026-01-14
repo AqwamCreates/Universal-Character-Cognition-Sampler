@@ -92,7 +92,7 @@ These samplers are stacked in order as shown below.
 3. top_p                 # Expressive Range
 4. typical_p             # Personality Preservation (IMPORTANT)
 5. min_p                 # Nonsense Filter
-6. dry                   $ Removes Sequence Repetition
+6. dry                   # Removes Sequence Repetition
 7. repetition_penalty    # Natural Flow Maintenance
 ```
 
