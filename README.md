@@ -111,8 +111,9 @@ This sampler configuration creates a three-stage cognitive pipeline:
    * Creates "statistical character prison" that maintains archetype
    * Not context-free but context-resilient
 
-3. **Flow Polish** (repetition_penalty)
+3. **Flow Polish** (dry → repetition_penalty)
 
+   * Removes sequence-level repetition before removing character-level repetition.
    * Maintains natural conversation flow
    * Prevents repetition while preserving character tics
 
