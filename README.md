@@ -147,7 +147,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 
 * The sampler is static and weighted quant-agnostic.
 
-### Common Settings
+### Quantization-Agnostic Settings
 
 | Setting                  | Recommended Value | Lower Bound Value            | Upper Bound                       |
 |--------------------------|-------------------|------------------------------|-----------------------------------|
