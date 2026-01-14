@@ -88,9 +88,9 @@ These samplers are stacked in order as shown below.
 
 ```
 1. temperature           # Creativity
-2. top_k                 # Good Option Variety
+2. top_k                 # Expression Budget
 3. top_p                 # Expressive Range
-4. typical_p             # Personality Preservation (IMPORTANT)
+4. typical_p             # Character Voice Preservation (IMPORTANT)
 5. min_p                 # Nonsense Filter
 6. dry                   # Removes Sequence Repetition
 7. repetition_penalty    # Natural Flow Maintenance
