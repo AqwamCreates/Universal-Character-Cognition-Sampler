@@ -107,7 +107,7 @@ This sampler configuration creates a three-stage cognitive pipeline:
 
 2. **Character Enforcement** (typical_p → min_p)
 
-   * `typical_p=0.9`: Gives character prompt 90% dominance over output
+   * `typical_p=0.85`: Gives character prompt 85% dominance over output
    * Creates "statistical character prison" that maintains archetype
    * Not context-free but context-resilient
 
