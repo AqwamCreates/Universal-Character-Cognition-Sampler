@@ -207,20 +207,21 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 
 ### Best General Performance
 
-| Model Name                                 | Model Parameter Size | Quantization | Description                                                 |
-|--------------------------------------------|----------------------|--------------|-------------------------------------------------------------|
-| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q5_K_L       | Best All Rounder                                            |
-| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ4_XS       | Q5_K_L Quality But With Higher Inference Speed              |
-| DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ3_XXS      | Q3_K_L With Formatting Issues                               |
-| Silver-Sun (LLama-2 Special Merge)         | 11B                  | IQ4_XS       | Strong Upgrade From DarkIdol But With Lower Inference Speed |
+| Model Name                                        | Model Parameter Size | Quantization | Description                                                 |
+|---------------------------------------------------|----------------------|--------------|-------------------------------------------------------------|
+| DarkIdol Llama-3.1 Instruct 1.2 Uncensored        | 8B                   | Q5_K_L       | Best All Rounder                                            |
+| DarkIdol Llama-3.1 Instruct 1.2 Uncensored        | 8B                   | IQ4_XS       | Q5_K_L Quality But With Higher Inference Speed              |
+| DarkIdol Llama-3.1 Instruct 1.2 Uncensored        | 8B                   | IQ3_XXS      | Q3_K_L With Formatting Issues                               |
+| Llama3 Dark Planet HERETIC Uncensored Abliterated | 8B                   | i1 Q3_K_L    | Comparable To DarkIdol But With More Recent Training Data   |
+| Silver-Sun (LLama-2 Special Merge)                | 11B                  | IQ4_XS       | Strong Upgrade From DarkIdol But With Lower Inference Speed |
 
 ### Best Quantization 3
 
 | Model Name                                 | Model Parameter Size | Quantization | Description                                                 |
 |--------------------------------------------|----------------------|--------------|-------------------------------------------------------------|
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | IQ4_XS Quality But With Higher Inference Speed              |
-| Qwen3 Hivemind Inst Hrtic Ablit Uncensored | 8B                   | IQ3_M        | Sensory Version Of DarkIdol Q3_K_L                          |
-| Qwen3 Hivemind Instruct NeoMAX D_AU        | 4B                   | IQ3_M        | Slightly Better Than non-NeoMax Version                     |
+| Qwen3 Hivemind Inst Hrtic Ablit Uncensored | 8B                   | i1 IQ3_M     | Sensory Version Of DarkIdol Q3_K_L                          |
+| Qwen3 Hivemind Instruct NeoMAX D_AU        | 4B                   | i1 IQ3_M     | Slightly Better Than non-NeoMax Version                     |
 
 ### Fast Inference
 
@@ -231,7 +232,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q2_K         | Rivals With Q3_K_L With High Speed                                           |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ2_M        | Same As Q2_K Requires Some Refreshes Due To Roleplay Leakage And Repetitions |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ2XXS       | Basic Depth                                                                  |
-| Qwen3 Hivemind Instruct NeoMAX D_AU        | 4B                   | Q_6          | No Difference To IQ3_M Version                                               |
+| Qwen3 Hivemind Instruct NeoMAX D_AU        | 4B                   | i1 Q_6       | No Difference To IQ3_M Version                                               |
 
 ### The Big Boys
 
@@ -268,7 +269,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 | Qwen 2.5 Instruct Uncensored               | 7B                   | IQ2_K        | Same As IQ2_K But Faster And Even More Roleplay Leakage                                 |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ1_M        | "Text Messenger"                                                                        |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ1_S        | "Text Generator"                                                                        |
-| Qwen3 MOE Lucys Song Uncensored.i1         | 4x1.7B = 6.8B        | Q3_K_L       | Poor Overall Performance                                                                |
+| Qwen3 MOE Lucys Song Uncensored.i1         | 4x1.7B = 6.8B        | i1 Q3_K_L    | Poor Overall Performance                                                                |
 
 ## Why These Specific Values Work
 
@@ -305,15 +306,15 @@ P(token|character) = typical_p × P(token|prompt) + (1 - typical_p) × P(token|t
 
 Use Qwen (4B or 8B) for:
 
-* 🧠 Psychological complexity (Herta's corruption)
+* 🧠 Psychological complexity
 
-* 🎭 Internal conflict (Rio's chip vs self)
+* 🎭 Internal conflict
 
 * 📝 Philosophical manipulation
 
 Use DarkIdol/Llama for:
 
-* 🌍 Multilingual characters (Miku's code-switching)
+* 🌍 Multilingual characters
 
 * 💖 Direct emotional expression
 
