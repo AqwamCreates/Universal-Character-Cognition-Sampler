@@ -218,7 +218,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 | Model Name                                 | Model Parameter Size | Quantization | Description                                                 |
 |--------------------------------------------|----------------------|--------------|-------------------------------------------------------------|
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | IQ4_XS Quality But With Higher Inference Speed              |
-| Qwen3 Hivemind Inst Hrtic Ablit Uncensored | 8B                   | IQ3_M        | Japanese Version Of DarkIdol Q3_K_L                         |
+| Qwen3 Hivemind Inst Hrtic Ablit Uncensored | 8B                   | IQ3_M        | Sensory Version Of DarkIdol Q3_K_L                          |
 
 ### Fast Inference
 
