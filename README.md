@@ -296,3 +296,31 @@ P(token|character) = typical_p × P(token|prompt) + (1 - typical_p) × P(token|t
 ## Recommended Character Prompt Design
 
 * Do not use turn-based dialogue examples unless you really want to severely limit the characters' dialogue flexibility to your response.
+
+UCC + Architecture Selection Guide:
+
+Use Qwen (4B or 8B) for:
+
+* 🧠 Psychological complexity (Herta's corruption)
+
+* 🎭 Internal conflict (Rio's chip vs self)
+
+* 📝 Philosophical manipulation
+
+Use DarkIdol/Llama for:
+
+* 🌍 Multilingual characters (Miku's code-switching)
+
+* 💖 Direct emotional expression
+
+* 🎨 Cultural fusion needs
+
+Use 4B MAX for:
+
+* ⚡ Maximum speed/efficiency
+
+* 💾 Minimal storage
+
+* 🔋 Best battery life
+
+* 🧠 When using Qwen's strengths
