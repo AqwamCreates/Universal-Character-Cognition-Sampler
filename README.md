@@ -231,7 +231,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 | Model Name                                 | Model Parameter Size | Quantization | Description                                                          |
 |--------------------------------------------|----------------------|--------------|----------------------------------------------------------------------|
 | Gemma The Writer HERETIC (Gemma 2)         | 9B                   | Q2_K         | DarkIdol Q5_K_L Killer                                               |
-| L3.1-Dark-Planet-ExxxxxxxxTended           | 10.7B                | Q2_K         | Comparable To DarkIdol Q5_K_L Killer, But Poor Instruction Following |
+| L3.1-Dark-Planet-ExxxxxxxxTended           | 10.7B                | Q2_M         | Comparable To DarkIdol Q5_K_L Killer, But Poor Instruction Following |
 | Silver-Sun (LLama-2 Special Merge)         | 11B                  | Q2_K         | DarkIdol Q5_K_L Slower Killer                                        |
 | Tiefighter (LLama-2 Special Merge)         | 13B                  | Q2_K         | Fatter Version Of Silver-Sun Q2_K                                    |
 
