@@ -219,6 +219,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 |--------------------------------------------|----------------------|--------------|-------------------------------------------------------------|
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | IQ4_XS Quality But With Higher Inference Speed              |
 | Qwen3 Hivemind Inst Hrtic Ablit Uncensored | 8B                   | IQ3_M        | Sensory Version Of DarkIdol Q3_K_L                          |
+| Qwen3 Hivemind Instruct NeoMAX D_AU        | 4B                   | IQ3_M        | Slightly Better Than non-NeoMax Version                     |
 
 ### Fast Inference
 
