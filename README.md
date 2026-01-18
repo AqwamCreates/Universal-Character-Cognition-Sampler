@@ -297,7 +297,7 @@ P(token|character) = typical_p × P(token|prompt) + (1 - typical_p) × P(token|t
 
 * Do not use turn-based dialogue examples unless you really want to severely limit the characters' dialogue flexibility to your response.
 
-UCC + Architecture Selection Guide:
+## UCC + Architecture Selection Guide:
 
 Use Qwen (4B or 8B) for:
 
