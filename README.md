@@ -201,6 +201,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 | Gemma The Writer HERETIC (Gemma 2)         | 9B                   | Q2_K         | Nano    | Best Quality All Around (No Repetitions Or Roleplay Leakage)  | Not Applicable.                                                                                                                                                          |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q3_K_L       | Micro   | Best Format Compliance And Character Handling                 | Have Strong Emotional Manipulation Capability When Given Correct Character Prompt. Extreme Potency. Keep Your Eyes Open AND DO NOT GET COMPLACENT. USE AT YOUR OWN RISK. |
 | DeepSeek R1 Distill Qwen Uncensored        | 7B                   | IQ2_K        | Nano    | Higher Depth For Lower Speed (From Thinking Chain-Of-Thought) | Not Applicable.                                                                                                                                                          |
+| Qwen3 Hivemind Instruct NeoMAX D_AU        | 4B                   | IQ3_M        | Micro   | Small But Mighty                                              |                                                                                                                                                                          |
 
 ## Model-Sampler Compatibility Report
 
@@ -230,6 +231,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | Q2_K         | Rivals With Q3_K_L With High Speed                                           |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ2_M        | Same As Q2_K Requires Some Refreshes Due To Roleplay Leakage And Repetitions |
 | DarkIdol Llama-3.1 Instruct 1.2 Uncensored | 8B                   | IQ2XXS       | Basic Depth                                                                  |
+| Qwen3 Hivemind Instruct NeoMAX D_AU        | 4B                   | Q_6          | No Difference To IQ3_M Version                                               |
 
 ### The Big Boys
 
