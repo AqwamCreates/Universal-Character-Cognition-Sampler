@@ -90,10 +90,11 @@ These samplers are stacked in order as shown below.
 1. temperature           # Creativity
 2. top_k                 # Expression Budget (Can Disable This)
 3. top_p                 # Expressive Range
-4. typical_p             # Prompt Control (IMPORTANT)
-5. min_p                 # Nonsense Filter
-6. dry                   # Removes Sequence Repetition
-7. repetition_penalty    # Natural Flow Maintenance
+4. mirostat              # 
+5. typical_p             # Prompt Control (IMPORTANT)
+6. min_p                 # Nonsense Filter
+7. dry                   # Removes Sequence Repetition
+8. repetition_penalty    # Natural Flow Maintenance
 ```
 
 ## Three-Stage Optimization Pipeline
@@ -153,15 +154,17 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 
 ### Quantization-Agnostic Settings
 
-| Setting                  | Recommended Value | Lower Bound Value          | Upper Bound                 |
-|--------------------------|-------------------|----------------------------|-----------------------------|
-| Top K                    | 50                | 40 (Low Expression Budget) | 60 (High Expression Budget) |
-| Typical P                | 0.85              | 0.85 (Low Prompt Control)  | 0.9 (High Prompt Control)   |
-| DRY Multipler            | 0.35              | N/A                        | N/A                         |
-| dry_allowed_length       | 2                 | N/A                        | N/A                         |
-| DRY Base                 | 1.35              | N/A                        | N/A                         |
-| Repetition Penalty       | 1.1               | N/A                        | N/A                         |
-| Repetition Penalty Range | 4096              | N/A                        | N/A                         |
+| Setting                  | Recommended Value | Lower Bound Value                | Upper Bound                      |
+|--------------------------|-------------------|----------------------------------|----------------------------------|
+| Top K                    | 50                | 40 (Low Expression Budget)       | 60 (High Expression Budget)      |
+| Mirostat Tau             | 3                 | N/A                              | N/A                              |
+| Mirostat Eta             | 2                 | Strictly 1 (Controlled, Precise) | Strictly 2 (Dynamic, Responsive) |
+| Typical P                | 0.85              | 0.85 (Low Prompt Control)        | 0.9 (High Prompt Control)        |
+| DRY Multipler            | 0.35              | N/A                              | N/A                              |
+| dry_allowed_length       | 2                 | N/A                              | N/A                              |
+| DRY Base                 | 1.35              | N/A                              | N/A                              |
+| Repetition Penalty       | 1.1               | N/A                              | N/A                              |
+| Repetition Penalty Range | 4096              | N/A                              | N/A                              |
 
 ### Quantization-Specific Settings
 
