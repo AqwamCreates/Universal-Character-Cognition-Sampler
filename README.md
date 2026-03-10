@@ -88,7 +88,7 @@ These samplers are stacked in order as shown below.
 
 ```
 1. temperature           # Creativity
-2. top_k                 # Expression Budget
+2. top_k                 # Expression Budget (Can Disable This)
 3. top_p                 # Expressive Range
 4. typical_p             # Prompt Control (IMPORTANT)
 5. min_p                 # Nonsense Filter
