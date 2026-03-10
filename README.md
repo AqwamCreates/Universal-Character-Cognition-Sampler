@@ -284,7 +284,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 
 * Not too low (0.3-0.5 = robotic)  
 * Not too high (0.8-1.2 = random)
-* **Optimal balance** for character consistency with natural variation
+* Optimal balance for character consistency with natural variation
 
 ### Typical_p: 0.85
 
