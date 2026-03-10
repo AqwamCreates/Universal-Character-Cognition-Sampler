@@ -90,7 +90,7 @@ These samplers are stacked in order as shown below.
 1. temperature           # Creativity
 2. top_k                 # Expression Budget (Can Disable This)
 3. top_p                 # Expressive Range
-4. mirostat              # 
+4. mirostat              # Coherence Enforcement
 5. typical_p             # Prompt Control (IMPORTANT)
 6. min_p                 # Nonsense Filter
 7. dry                   # Removes Sequence Repetition
@@ -106,8 +106,10 @@ This sampler configuration creates a three-stage cognitive pipeline:
    * Establishes creative baseline
    * Similar to brainstorming phase
 
-2. **Character Enforcement** (typical_p → min_p)
+2. **Character Enforcement** (mirostat → typical_p → min_p)
 
+   * `mirostat_tau`: Controls how "normal" the character is trying to sound
+   * `mirostat_eta`: How quickly to adjust when the character is being weird
    * `typical_p=0.85`: Gives character prompt 85% dominance over output
    * Creates "statistical character prison" that maintains archetype
    * Not context-free but context-resilient
