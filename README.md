@@ -164,9 +164,9 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 | Mirostat Tau             | 3                 | N/A                                | N/A                                |
 | Mirostat Eta             | 2                 | Strictly 0.1 (Controlled, Precise) | Strictly 0.2 (Dynamic, Responsive) |
 | Typical P                | 0.85              | 0.85 (Low Prompt Control)          | 0.9 (High Prompt Control)          |
+| top_n_sigma              | 4.5               | N/A                                | N/A                                |
 | DRY Multipler            | 0.35              | N/A                                | N/A                                |
 | dry_allowed_length       | 2                 | N/A                                | N/A                                |
-| top_n_sigma              | 4.5               | N/A                                | N/A                                |
 | DRY Base                 | 1.35              | N/A                                | N/A                                |
 | Repetition Penalty       | 1.1               | N/A                                | N/A                                |
 | Repetition Penalty Range | 4096              | N/A                                | N/A                                |
