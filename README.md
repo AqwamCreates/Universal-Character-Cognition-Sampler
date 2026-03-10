@@ -93,8 +93,9 @@ These samplers are stacked in order as shown below.
 4. mirostat              # Coherence Enforcement
 5. typical_p             # Prompt Control (IMPORTANT)
 6. min_p                 # Nonsense Filter
-7. dry                   # Removes Sequence Repetition
-8. repetition_penalty    # Natural Flow Maintenance
+7. top_n_sigma           
+8. dry                   # Removes Sequence Repetition
+9. repetition_penalty    # Natural Flow Maintenance
 ```
 
 ## Three-Stage Optimization Pipeline
@@ -114,9 +115,9 @@ This sampler configuration creates a three-stage cognitive pipeline:
    * Creates "statistical character prison" that maintains archetype
    * Not context-free but context-resilient
 
-3. **Flow Polish** (dry → repetition_penalty)
+3. **Flow Polish** (top_n_sigma → dry → repetition_penalty)
 
-   * Removes sequence-level repetition before removing character-level repetition.
+   * Removes sequence-level oddity, repetition before removing character-level repetition.
    * Maintains natural conversation flow
    * Prevents repetition while preserving character tics
 
@@ -165,6 +166,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 | Typical P                | 0.85              | 0.85 (Low Prompt Control)          | 0.9 (High Prompt Control)          |
 | DRY Multipler            | 0.35              | N/A                                | N/A                                |
 | dry_allowed_length       | 2                 | N/A                                | N/A                                |
+| top_n_sigma              | 4.5               | N/A                                | N/A                                |
 | DRY Base                 | 1.35              | N/A                                | N/A                                |
 | Repetition Penalty       | 1.1               | N/A                                | N/A                                |
 | Repetition Penalty Range | 4096              | N/A                                | N/A                                |
