@@ -156,17 +156,17 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 
 ### Quantization-Agnostic Settings
 
-| Setting                  | Recommended Value | Lower Bound Value                | Upper Bound                      |
-|--------------------------|-------------------|----------------------------------|----------------------------------|
-| Top K                    | 50                | 40 (Low Expression Budget)       | 60 (High Expression Budget)      |
-| Mirostat Tau             | 3                 | N/A                              | N/A                              |
-| Mirostat Eta             | 2                 | Strictly 1 (Controlled, Precise) | Strictly 2 (Dynamic, Responsive) |
-| Typical P                | 0.85              | 0.85 (Low Prompt Control)        | 0.9 (High Prompt Control)        |
-| DRY Multipler            | 0.35              | N/A                              | N/A                              |
-| dry_allowed_length       | 2                 | N/A                              | N/A                              |
-| DRY Base                 | 1.35              | N/A                              | N/A                              |
-| Repetition Penalty       | 1.1               | N/A                              | N/A                              |
-| Repetition Penalty Range | 4096              | N/A                              | N/A                              |
+| Setting                  | Recommended Value | Lower Bound Value                  | Upper Bound                        |
+|--------------------------|-------------------|------------------------------------|------------------------------------|
+| Top K                    | 50                | 40 (Low Expression Budget)         | 60 (High Expression Budget)        |
+| Mirostat Tau             | 3                 | N/A                                | N/A                                |
+| Mirostat Eta             | 2                 | Strictly 0.1 (Controlled, Precise) | Strictly 0.2 (Dynamic, Responsive) |
+| Typical P                | 0.85              | 0.85 (Low Prompt Control)          | 0.9 (High Prompt Control)          |
+| DRY Multipler            | 0.35              | N/A                                | N/A                                |
+| dry_allowed_length       | 2                 | N/A                                | N/A                                |
+| DRY Base                 | 1.35              | N/A                                | N/A                                |
+| Repetition Penalty       | 1.1               | N/A                                | N/A                                |
+| Repetition Penalty Range | 4096              | N/A                                | N/A                                |
 
 ### Quantization-Specific Settings
 
@@ -285,6 +285,18 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 * Not too low (0.3-0.5 = robotic)  
 * Not too high (0.8-1.2 = random)
 * Optimal balance for character consistency with natural variation
+
+### Mirostat_tau: 3
+
+* At 2 = "I must sound perfectly professional at all times"
+* At 3 = "I'm having a normal conversation"
+* At 4 = ""I'm going to be wild and creative"
+
+### Mirostat_eta: 0.1 or 0.2
+
+* At 0.1 = Slow to respond
+* At 0.2 = Normal social feedback loop
+* At 0.3 = Overcorrects to every micro-expression
 
 ### Typical_p: 0.85
 
