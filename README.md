@@ -159,6 +159,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 | Setting                  | Recommended Value | Lower Bound Value                  | Upper Bound                        |
 |--------------------------|-------------------|------------------------------------|------------------------------------|
 | Top K                    | 50                | 40 (Low Expression Budget)         | 60 (High Expression Budget)        |
+| Mirostat Mode            | 2                 | N/A                                | N/A                                |
 | Mirostat Tau             | 3                 | N/A                                | N/A                                |
 | Mirostat Eta             | 2                 | Strictly 0.1 (Controlled, Precise) | Strictly 0.2 (Dynamic, Responsive) |
 | Typical P                | 0.85              | 0.85 (Low Prompt Control)          | 0.9 (High Prompt Control)          |
