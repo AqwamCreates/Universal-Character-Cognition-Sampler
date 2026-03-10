@@ -93,7 +93,7 @@ These samplers are stacked in order as shown below.
 4. mirostat              # Coherence Enforcement
 5. typical_p             # Prompt Control (IMPORTANT)
 6. min_p                 # Nonsense Filter
-7. top_n_sigma           
+7. top_n_sigma           # Character Oddity Removal
 8. dry                   # Removes Sequence Repetition
 9. repetition_penalty    # Natural Flow Maintenance
 ```
