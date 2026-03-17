@@ -291,6 +291,7 @@ Conclusion: UCC doesn't eliminate context needs but reduces them dramatically an
 
 ### Mirostat_tau: 3
 
+* It increases the voabulary size on common topics. It also reduces the vocabulary size when it becomes specific about certain topics.
 * At 2 = "I must sound perfectly professional at all times"
 * At 3 = "I'm having a normal conversation"
 * At 4 = ""I'm going to be wild and creative"
